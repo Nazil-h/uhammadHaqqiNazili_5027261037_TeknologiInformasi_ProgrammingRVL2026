@@ -84,8 +84,8 @@ public:
 };
 
 class Warrior : public Character {
-    static int SKILL_COST = 20;
-    static int BASE_ATK   = 25;
+    static const int SKILL_COST = 20;
+    static const int BASE_ATK   = 25;
 
 public:
     Warrior(string n) : Character(n, "Warrior", 150, 50, BASE_ATK, 15) {}
@@ -143,8 +143,8 @@ public:
 };
 
 class Archer : public Character {
-    static constexpr int SKILL_COST = 25;
-    static constexpr int BASE_ATK   = 35;
+    static const int SKILL_COST = 25;
+    static const int BASE_ATK   = 35;
 
 public:
     Archer(string n) : Character(n, "Archer", 110, 70, BASE_ATK, 10) {}
